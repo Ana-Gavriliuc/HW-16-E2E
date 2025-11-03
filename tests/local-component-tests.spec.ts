@@ -7,8 +7,8 @@ let placeButton: Locator;
 let popupModal: Locator;
 
 test.beforeEach(async ({ page }) => {
-    usernameField = page.getByTestId("username");
-    emailField = page.getByTestId("email");
+    usernameField = page.locator("#username");
+    emailField = page.locator("#email");
     placeButton = page.locator("#submit-order");
     popupModal = page.locator("[id=popup-message]");
 
